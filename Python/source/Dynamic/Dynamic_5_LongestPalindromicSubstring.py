@@ -1,3 +1,6 @@
+#https://leetcode.com/problems/longest-palindromic-substring/solution/
+#Time O(n)W
+#Space 1
 class solution:
     def longestPalindrome(self, s):
         self.maxlen = 0
