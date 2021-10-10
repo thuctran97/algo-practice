@@ -5,7 +5,7 @@ import java.util.Map;
 
 // Java program to find the length of the longest substring 
 // without repeating characters 
-public class String_LongestSubstring {
+public class String_3_LongestSubstring {
   
     static int longestUniqueSubsttr(String str) 
     { 
