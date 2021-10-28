@@ -16,7 +16,7 @@ package Array;
 // Output: index of target => 2
 //https://leetcode.com/problems/search-in-rotated-sorted-array/solution/
 
-class Array_Axon_InterviewTest2 {
+class Array_Axon_Interview2 {
     public void searchIndex(int value, int left, int right){
 
 

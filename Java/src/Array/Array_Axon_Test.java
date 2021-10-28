@@ -5,7 +5,7 @@
  */
 package Array;
 
-public class Array_Axon_AlgoTest2 {
+public class Array_Axon_Test {
     public static long[] solution(double[] prices) {
         double totalPrice = 0;
         long totalAdjustPrice = 0;
