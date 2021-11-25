@@ -1,6 +1,6 @@
 import java.util.PriorityQueue;
 
-public class CreatePriorityQueueExample {
+class CreatePriorityQueueExample {
     public static void main(String[] args) {
         // Create a Priority Queue
         PriorityQueue<Integer> numbers = new PriorityQueue<>();

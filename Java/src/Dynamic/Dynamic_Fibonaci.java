@@ -5,7 +5,7 @@
  */
 package Dynamic;
 
-public class Dynamic_Fibonaci {
+class Array_540_SingleElementInSortedArray {
     public static int[] arr;
     public static int FBNC(int n){
         if (n<= 1){
@@ -17,7 +17,7 @@ public class Dynamic_Fibonaci {
     }
     public static void main(String args[]) {
         int n= 5;
-        arr = new int[n];
+        arr = new int[n+1];
         System.out.println(FBNC(n));
     }
 }

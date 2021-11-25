@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/single-element-in-a-sorted-array/solution/
-class Solution {
+class Array_540_SingleElementInSortedArray {
     public int checkPos(int[] a, int limit, int pos){
         if (pos + 1 < limit && a[pos] == a[pos+1]){
             return 1;
