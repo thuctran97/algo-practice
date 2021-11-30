@@ -1,23 +1,57 @@
 package Array.Aug14;
 // https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
-class Array_Find1stAndLastInSortedArray {
-    int leftMost = 0;
-    int rightMost = 0;
-    public void searchLeftMost(int[] nums, int value, int left, int right){
-        int middle = (left+right)/2;
-        if (nums[middle]==value){
-
+class Solution {
+    public int[] searchRange(int[] nums, int target) {
+        
+        int firstOccurrence = this.findBound(nums, target, true);
+        
+        if (firstOccurrence == -1) {
+            return new int[]{-1, -1};
         }
-        if (nums[middle]>value){
-            searchLeftMost(nums,value, left, middle-1);
+        
+        int lastOccurrence = this.findBound(nums, target, false);
+        
+        return new int[]{firstOccurrence, lastOccurrence};
+    }
+    
+    private int findBound(int[] nums, int target, boolean isFirst) {
+        int N = nums.length;
+        int begin = 0, end = N - 1;
+        
+        while (begin <= end) {
+            
+            int mid = (begin + end) / 2;
+            
+            if (nums[mid] == target) {
+                
+                if (isFirst) {
+                    
+                    // This means we found our lower bound.
+                    if (mid == begin || nums[mid - 1] != target) {
+                        return mid;
+                    }
+                    
+                    // Search on the left side for the bound.
+                    end = mid - 1;
+                    
+                } else {
+                    
+                    // This means we found our upper bound.
+                    if (mid == end || nums[mid + 1] != target) {
+                        return mid;
+                    }
+                    
+                    // Search on the right side for the bound.
+                    begin = mid + 1;
+                }
+                
+            } else if (nums[mid] > target) {
+                end = mid - 1;
+            } else {
+                begin = mid + 1;
+            }
         }
-        searchLeftMost(nums,value, middle+1, right);
-    }
-    public static int[] searchRange(int[] nums, int target) {
-        return null;
-    }
-    public static void main(String[] args){
-        int[] nums = {5,7,7,8,8,10};
-        searchRange(nums, 8);
+        
+        return -1;
     }
 }
