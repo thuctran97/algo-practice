@@ -1,3 +1,5 @@
+package Array;
+
 // https://leetcode.com/problems/single-element-in-a-sorted-array/solution/
 class Array_540_SingleElementInSortedArray {
     public int checkPos(int[] a, int limit, int pos){

@@ -1,7 +1,13 @@
-# https://leetcode.com/problems/3sum/
-# 1. Create dict
-# 2. Iterate left, right to middle, with each left right check in dict
-class Solution {
+package Array;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+// https://leetcode.com/problems/3sum/
+// 1. Create dict
+// 2. Iterate left, right to middle, with each left right check in dict
+class Solution1 {
     public List<List<Integer>> threeSum(int[] nums) {
         Arrays.sort(nums);
         List<List<Integer>> res = new ArrayList<>();

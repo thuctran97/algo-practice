@@ -1,6 +1,6 @@
-package Array.Aug14;
+package Array;
 // https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
-class Solution {
+class Solution34 {
     public int[] searchRange(int[] nums, int target) {
         
         int firstOccurrence = this.findBound(nums, target, true);

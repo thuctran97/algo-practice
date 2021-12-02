@@ -43,7 +43,7 @@ class Result2 {
 
 }
 
-class Solution {
+class Solution_Tiki {
     public static void main(String[] args) throws IOException {
         List<Integer> l = new ArrayList<>();
         l.add(1);

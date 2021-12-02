@@ -1,3 +1,5 @@
+package Test;
+
 import java.util.PriorityQueue;
 
 class CreatePriorityQueueExample {

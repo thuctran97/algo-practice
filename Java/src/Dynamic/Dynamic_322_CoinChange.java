@@ -1,7 +1,9 @@
+package Dynamic;
+
 import java.util.Arrays;
 
 //https://leetcode.com/problems/coin-change/
-class Solution {
+class Solution322 {
     public int coinChange(int[] coins, int amount){
         int[] dp = new int[amount+1];
         Arrays.fill(dp, amount + 1);

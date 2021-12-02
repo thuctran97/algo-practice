@@ -1,6 +1,12 @@
+package Array;
+
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.PriorityQueue;
+
 // https://leetcode.com/problems/meeting-rooms-ii/solution/
 // Min heap
-class Solution {
+class Solution253 {
   public int minMeetingRooms(int[][] intervals) {
       
   // Check for the base case. If there are no intervals, return 0

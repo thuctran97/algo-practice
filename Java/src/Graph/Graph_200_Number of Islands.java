@@ -1,5 +1,9 @@
+package Graph;
+
+import java.util.ArrayDeque;
+
 // https://leetcode.com/problems/number-of-islands/
-class Solution {
+class Solution200 {
     public int numIslands(char[][] grid) {
         int count=0;
         for(int i=0;i<grid.length;i++){

@@ -1,4 +1,6 @@
-public class BinarySearchTree{
+package Tree;
+
+class BinarySearchTree{
     public Node root;
     public BinarySearchTree(){
         this.root = null;
